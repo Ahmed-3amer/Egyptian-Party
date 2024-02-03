@@ -1,0 +1,137 @@
+/* global style */
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    scroll-behavior: auto !important;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a,span {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+}
+
+/* start header section */
+#home {
+    height: 100vh;
+    background-image: linear-gradient(rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)) ,url(../images/WhatsApp\ Image\ 2024-01-25\ at\ 12.13.59\ PM.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeContent h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+/* end header section */
+
+
+/* start open bar */
+.openNav {
+    width: 270px;
+    top: 0;
+    left: -270px;
+    z-index: 999;
+    transition: all 1s;
+}
+
+.openNav ul li {
+    font-size: 25px;
+    margin-block: 20px;
+}
+
+.openNav ul li a {
+    transition: color 0.3s;
+}
+
+.openNav ul li a:hover {
+color: rgba(214, 46, 51 , 0.4);
+}
+
+#closeIcon {
+    cursor: pointer;
+    transition: color 0.3s !important;
+}
+
+#closeIcon:hover {
+    color: rgba(214, 46, 51 , 0.4) !important;
+}
+
+.openIcon {
+    cursor: pointer;
+    top: 50%;
+    left: -465px;
+    transition: all 1s;
+}
+/* end open bar */
+
+
+/* start singer */
+.slideContent h3 {
+    cursor: pointer;
+    color: #fff;
+    background-color: #E68285;
+    margin-bottom: 0;
+    padding-block: 10px;
+}
+.slideContent p {
+    display: none;
+    background-color: #CCCCCC;
+    margin-bottom: 0;
+    padding-block: 10px;
+    padding-inline: 20px;
+}
+/* end singer */
+
+/* start counter section */
+#counter {
+    background-image: linear-gradient(rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)), url(../images/WhatsApp\ Image\ 2024-01-25\ at\ 12.15.22\ PM.jpeg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.expired {
+    font-size: 60px;
+    color: #fff;
+}
+/* end counter section */
+
+/* start contact section */
+#contact h1,h4 {
+    color: #444444 !important;
+}
+
+.emailDesc {
+    color: #D62E33;
+}
+
+.contactLinks li a {
+    font-size: 20px;
+    color: #595C5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #444444;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.contactLinks li a:hover {
+    color: white;
+    background-color: #D62E33;
+    border: none;
+}
+
+/* end contact section */
