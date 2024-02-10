@@ -1,19 +1,17 @@
 /* side bar event */
 $('.openIcon').click(function(){
     $('.openNav').css('left', '0');
-    $('.openIcon').css('left', '-200px');
 })
 
 $('#closeIcon').click(function(){
     $('.openNav').css('left', '-270px');
-    $('.openIcon').css('left', '-465px');
 })
 
 
 /* slide content event */
 $('.slideContent h3').click(function(){
     $(this).next().slideToggle();
-    $('.slideContent p').not($(this).next()).slideUp();
+    $('.slideContent p').not($(this).next()).slideUp(); 
 })
 
 
